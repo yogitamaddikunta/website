@@ -5,7 +5,7 @@
 import React,{Suspense, lazy, useEffect} from 'react';
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import './style.css'
+import './style.css';
 import Header from './Components/Header';
 import Body from './Components/Body';
 import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
@@ -30,6 +30,7 @@ useEffect(()=>{
   setUserName(data.name)
 },[])
     return(
+
       <Provider store={appStore}>
       <UserContext.Provider value={{LoggedInUser:userName,setUserName}}>
         <>
