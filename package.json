@@ -7,12 +7,12 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yogitamaddikunta/React.git"
+    "url": "git+https://github.com/yogitamaddikunta/website.git"
   },
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
   "author": "yogita",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yogitamaddikunta/React/issues"  },
+    "url": "https://github.com/yogitamaddikunta/website/issues"  },
 
   "devDependencies": {
     "autoprefixer": "^10.4.16",
