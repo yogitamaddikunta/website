@@ -1,10 +1,13 @@
 {
+  "homepage":"http://yogitamaddikunta.github.io/website",
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "this is namaste-react",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "jest"
   },
   "repository": {
@@ -20,9 +23,10 @@
   "bugs": {
     "url": "https://github.com/yogitamaddikunta/React/issues"
   },
-  "homepage": "https://github.com/yogitamaddikunta/React#readme",
+
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.1.0",
     "parcel": "^2.10.3",
     "postcss": "^8.4.32",
     "process": "^0.11.10",
